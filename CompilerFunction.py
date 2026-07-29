@@ -2,6 +2,12 @@ from setuptools import setup
 from Cython.Build import cythonize
 from languges import *
 
+def PythonImport(file_name, lan):
+    with open("import.py", "w", encoding="utf-8") as file:
+        file.write(f"from {file_name} import *")
+        
+    print(SuccessfulCompilation[lan])
+
 def compile(file_name, lan):
     setup(
         ext_modules=cythonize(file_name)
