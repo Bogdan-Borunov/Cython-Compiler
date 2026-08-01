@@ -8,7 +8,16 @@ import sys
 import importlib
 import traceback
 
-lan = 0 # 0 - English, 1 - Русский
+lan = None
+
+def update_lan():
+    global lan
+
+    with open("languges.txt", "r", encoding="utf-8") as file:
+        TextLan = file.read()
+    lan = int(TextLan)
+
+update_lan()
 
 print(run[lan])
 
@@ -32,7 +41,11 @@ while True:
         PythonImport(name_file, lan)
     elif s == "/run" or s == "run":
         pass
+    elif s == "/lan" or s == "lan":
+        ChangeLanFunction(lan)
     elif s == "/exit" or s == "exit":
         break
     else:
         print(NotFound[lan])
+
+    update_lan()

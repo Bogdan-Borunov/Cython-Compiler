@@ -1,0 +1,21 @@
+# Ignore __pycache__
+__pycache__/
+*.py[cod]
+
+# Ignore build
+build/
+
+# Ignore venv
+venv/
+.venv/
+env/
+
+# Ignore Test Files
+*.pyx
+*.so
+*.c
+*.cpp
+*.cc
+*.cxx
+*.c++
+*.pyd

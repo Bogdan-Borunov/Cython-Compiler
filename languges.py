@@ -5,7 +5,7 @@ commands = ["""/help - Learn Commands
 /start - Compiler Run
 /create - Create .pyx file and compile
 /import - Import .pyx gile
-/run - Run .pyx file
+/lan - Change Language
 /exit - Exit""",
 
 """/help - Изучить Команды
@@ -13,7 +13,7 @@ commands = ["""/help - Learn Commands
 /start - Запустить Компилятор
 /create - Создать .pyx файл и компилировать
 /import - Импортировать .pyx файл
-/run - Запустить .pyx файл
+/lan - Поменять Язык
 /exit - Выйти"""]
 
 NotFound = ["Command not found", "Команда не найдена"]
@@ -31,3 +31,16 @@ WritePYXname = ["Write down the name of the .pyx file: ", "Запишите на
 WriteFunctionName = ["Enter a module object to run: ", "Введите объект модуля для запуска: "]
 
 HelloCython = ["Greetings from Cython!", "Привет из Cython!"]
+
+ChangeLan = ["""Select Language:
+0 - English Language
+1 - Russian Language
+
+Language: """, """Выберите язык:
+0 - Английский Язык
+1 - Русский Язык
+
+Язык: """]
+
+Error = ["Error: ", "Ошибка: "]
+Error2 = [", please try again", ", пожалуйста, попробуйте снова"]
