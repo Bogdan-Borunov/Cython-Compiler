@@ -19,3 +19,4 @@ env/
 *.cxx
 *.c++
 *.pyd
+import.py
