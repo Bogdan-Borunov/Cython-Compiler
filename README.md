@@ -16,6 +16,7 @@ Create, compile, and manage `.pyx` modules directly from the terminal with a cle
 * Create new `.pyx` files automatically
 * Generate `.py` import files for `.pyx` modules
 * English / Russian interface
+* Easy language switching with `/lan`
 * Terminal-friendly workflow
 * Active development and ongoing improvements
 
@@ -47,7 +48,7 @@ Run the compiler:
 python compiler.py
 ```
 
-After запускing, the program will open the command menu in the selected language.
+After starting, the program will open the command menu in the selected language.
 
 ---
 
@@ -60,34 +61,22 @@ After запускing, the program will open the command menu in the selected la
 | `/start`  | Compile an existing `.pyx` file                             |
 | `/create` | Create and compile a new `.pyx` file                        |
 | `/import` | Create a `.py` file that imports the selected `.pyx` module |
-| `/run`    | Reserved for future functionality                           |
+| `/lan`    | Change the interface language                               |
 | `/exit`   | Exit the program                                            |
 
 ---
 
 ## 🌐 Language Switch
 
-The language is controlled in `setup.py` on line 11:
+The language is changed with the `/lan` command.
 
-```python
-lan = 0 # 0 - English, 1 - Русский
-```
-
-To switch to Russian, change it to:
-
-```python
-lan = 1 # 0 - English, 1 - Русский
-```
-
-To switch back to English, set it to `0` again.
+After typing `/lan`, the program will prompt you to choose a language.
 
 ---
 
 ## 💡 Dependencies
 
-The repository already includes a ready-to-use virtual environment (`venv`), so everything needed is already prepared.
-
-If you want to move the compiler into another project, install the required packages manually:
+To use the compiler, install the required packages:
 
 ```bash
 pip install cython setuptools
@@ -116,6 +105,7 @@ We would be very happy if you starred our repository ⭐
 * Автоматическое создание новых `.pyx` файлов
 * Генерация `.py` файлов для импорта `.pyx` модулей
 * Поддержка английского и русского языков
+* Простое переключение языка через `/lan`
 * Удобная работа через консоль
 * Постоянное развитие и обновления
 
@@ -158,34 +148,22 @@ python compiler.py
 | `/start`  | Скомпилировать существующий `.pyx` файл                         |
 | `/create` | Создать и скомпилировать новый `.pyx` файл                      |
 | `/import` | Создать `.py` файл, который импортирует выбранный `.pyx` модуль |
-| `/run`    | Зарезервировано для будущих возможностей                        |
+| `/lan`    | Изменение языка                                                 |
 | `/exit`   | Выйти из программы                                              |
 
 ---
 
 ## 🌐 Переключение языка
 
-Язык задаётся в `setup.py` на 11 строке:
+Язык задаётся при помощи команды `/lan`.
 
-```python
-lan = 0 # 0 - English, 1 - Русский
-```
-
-Чтобы включить русский язык, нужно заменить строку на:
-
-```python
-lan = 1 # 0 - English, 1 - Русский
-```
-
-Чтобы вернуть английский язык, снова поставьте `0`.
+После ввода `/lan` появится поле ввода, где вам предложат выбрать язык.
 
 ---
 
 ## 💡 Зависимости
 
-В репозитории уже есть готовое виртуальное окружение (`venv`), поэтому дополнительно ничего устанавливать не нужно.
-
-Если вы будете переносить компилятор в другой проект, установите нужные библиотеки вручную:
+Для работы компилятора требуется установить нужные библиотеки:
 
 ```bash
 pip install cython setuptools
