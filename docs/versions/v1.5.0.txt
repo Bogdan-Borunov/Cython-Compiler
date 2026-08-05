@@ -1,0 +1,12 @@
+v1.5.0
+
+Briefly:
+- Running a command with arguments
+- Beautiful output of "Cython Compile!" at startup
+- Added docs
+
+The update updated the command acceptance logic. Previously,
+we simply entered the command and added whatever we needed.
+Now, we write it like this: /start main.pyx. This is more convenient
+and saves time. Also, when launched, the beautiful text "Cython Compiler!"
+is displayed. A docs folder was added for a detailed review of the updates.

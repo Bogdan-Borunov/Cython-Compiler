@@ -38,11 +38,11 @@ def compile(file_name, lan):
     print(SuccessfulCompilation[lan])
 
 def ccompile(file_name, lan):
-    with open(f"{file_name}.pyx", "w", encoding="utf-8") as file:
+    with open(f"{file_name}", "w", encoding="utf-8") as file:
         file.write(f"print('{HelloCython[lan]}')")
 
     setup(
-        ext_modules=cythonize(f"{file_name}.pyx")
+        ext_modules=cythonize(f"{file_name}")
     )
 
     print(SuccessfulCompilation[lan])

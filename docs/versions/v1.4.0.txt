@@ -1,0 +1,12 @@
+v1.4.0
+
+Briefly:
+- Added .gitcore
+- Command /lan - Language can now be changed through the console
+- CHANGELOG.md - Version reporting
+- Added error handler
+
+In this major update, we have prepared everything for the final 
+publication of the repository, added CHANGELOG.md and
+.gitignore, as well as added the /lan command, an error handler,
+and fixed some bugs.
