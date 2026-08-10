@@ -14,7 +14,7 @@ lan = None
 def update_lan():
     global lan
 
-    with open("languges.txt", "r", encoding="utf-8") as file:
+    with open("txt_files/languges.txt", "r", encoding="utf-8") as file:
         TextLan = file.read()
     lan = int(TextLan)
 
@@ -59,6 +59,10 @@ while True:
     match parts:
         case ["/help"]:
             print(commands[lan])
+        case ["/settings", "rename"]:
+            selected_folder(lan)
+        case ["/settings"]:
+            options(lan)
         case ["/github"]:
             print("https://github.com/Bogdan-Borunov/Cython-Compiler")
         case ["/start", file_name]:

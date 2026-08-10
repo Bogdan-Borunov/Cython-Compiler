@@ -1,0 +1,10 @@
+v1.6.0
+
+Briefly:
+- Add command /settings
+- Folder txt_files
+- Bugs Fixed
+
+In this update, the /settings command was added to change
+the path where files are saved, bugs were also fixed
+and a txt_files folder was added for text files

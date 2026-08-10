@@ -9,6 +9,7 @@ Create, compile, and manage `.pyx` modules directly from the terminal with a con
 
 * Interactive terminal menu
 * Compile existing `.pyx` files
+* Changing parameters and settings using /settings
 * Automatically create new `.pyx` files
 * Generate `.py` files for importing `.pyx` modules
 * English and Russian language support
@@ -33,6 +34,7 @@ After launch, the program will open the command menu in the selected language.
 | Command   | Description                                                                          |
 | --------- | ------------------------------------------------------------------------------------ |
 | `/help`   | Show the list of available commands                                                  |
+| `/settings`| Setting options and other settings                                                  |
 | `/github` | Print the project GitHub link                                                        |
 | `/start`  | Compile an existing `.pyx` file, `/start FILE.pyx`                                   |
 | `/create` | Create and compile a new `.pyx` file, `/create FILE.pyx`                             |
@@ -79,6 +81,7 @@ We would be very happy if you starred our repository ⭐
 
 * Интерактивное меню в терминале
 * Компиляция существующих `.pyx` файлов
+* Смена параметров и настроек при помощи `/settings`
 * Автоматическое создание новых `.pyx` файлов
 * Генерация `.py` файлов для импорта `.pyx` модулей
 * Поддержка английского и русского языков
@@ -103,6 +106,7 @@ python compiler.py
 | Команда   | Описание                                                                               |
 | --------- | ---------------------------------------------------------------------------------------|
 | `/help`   | Показать список доступных команд                                                       |
+| `/settings`| Настройка опций и других настроек                                                     |
 | `/github` | Вывести ссылку на GitHub проекта                                                       |
 | `/start`  | Скомпилировать существующий `.pyx` файл, /start ИМЯ.pyx                                |
 | `/create` | Создать и скомпилировать новый `.pyx` файл, /create ИМЯ.pyx                            |

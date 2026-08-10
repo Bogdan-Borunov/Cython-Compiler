@@ -1,6 +1,7 @@
 run = ["Launch..", "Запуск.."]
 
 commands = ["""/help - Learn Commands
+/settings - Options
 /github - GitHub url
 /start - Compiler Run
 /create - Create .pyx file and compile
@@ -9,6 +10,7 @@ commands = ["""/help - Learn Commands
 /exit - Exit""",
 
 """/help - Изучить Команды
+/settings - Опции
 /github - Ссылка на GitHub
 /start - Запустить Компилятор
 /create - Создать .pyx файл и компилировать
@@ -25,6 +27,12 @@ SuccessfulCompilation = ["Successful!", "Успешно!"]
 SettingsMessage = ["""Settings:
 NONE""", """Настройки:
 NONE"""]
+
+none = ["Project Directory", "Директория Проекта"]
+
+SavePath = ["Path for saving files: ", "Путь для сохранения файлов: "]
+
+RenamePathMessage = ["You can change the path with the command /settings rename.", "Вы можете изменить путь с помощью команды /settings rename."]
 
 WritePYXname = ["Write down the name of the .pyx file: ", "Запишите название .pyx файла: "]
 

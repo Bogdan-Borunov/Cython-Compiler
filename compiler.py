@@ -7,3 +7,5 @@ subprocess.run([
     "build_ext",
     "--inplace"
 ], check=True)
+
+# COMPILER RUN

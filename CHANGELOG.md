@@ -14,3 +14,8 @@
 - Running a command with arguments
 - Beautiful output of "Cython Compile!" at startup
 - Added docs
+
+## v1.6.0
+- Add command /settings
+- Folder txt_files
+- Bugs Fixed
