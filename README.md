@@ -1,140 +1,125 @@
-## 🇺🇸 English Version
+# Cython-Compiler
 
-**An interactive compiler for Cython projects with English and Russian support.**
-Create, compile, and manage `.pyx` modules directly from the terminal with a convenient command system and a clear workflow.
+An interactive command-line tool for creating, compiling, and managing Cython modules with English and Russian language support.
 
----
+Cython-Compiler simplifies common Cython development tasks by providing an interactive terminal menu and a convenient command-based workflow.
 
-## ✨ Features
+## Motivation
 
-* Interactive terminal menu
-* Compile existing `.pyx` files
-* Changing parameters and settings using /settings
-* Automatically create new `.pyx` files
-* Generate `.py` files for importing `.pyx` modules
-* English and Russian language support
-* Easy language switching with `/lan`
-* Convenient terminal-based workflow
-* Active development and ongoing updates
+Working with Cython files often involves repetitive tasks such as creating source files, compiling modules, and preparing Python files to import compiled code.
 
----
+Cython-Compiler was created to make these tasks easier through a simple command-line interface. The project also provides bilingual support, making it more accessible to both English-speaking and Russian-speaking developers.
 
-## 🚀 Launch
+## Quick Start
+
+### Prerequisites
+
+Before using Cython-Compiler, make sure you have:
+
+- Python installed.
+- A compatible C compiler configured on your system.
+- Git installed to clone the repository.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Bogdan-Borunov/Cython-Compiler.git
+cd Cython-Compiler
+```
+
+### 2. Install dependencies
+
+Install the required Python packages:
+
+```bash
+python -m pip install cython setuptools art
+```
+
+### 3. Run the application
+
+Start the interactive compiler:
 
 ```bash
 python compiler.py
 ```
 
-After launch, the program will open the command menu in the selected language.
+The application opens an interactive terminal menu in the selected language.
 
----
+## Usage
 
-## 📜 Commands
+Cython-Compiler provides commands for managing Cython source files directly from the terminal.
 
-| Command   | Description                                                                          |
-| --------- | ------------------------------------------------------------------------------------ |
-| `/help`   | Show the list of available commands                                                  |
-| `/settings`| Setting options and other settings                                                  |
-| `/github` | Print the project GitHub link                                                        |
-| `/start`  | Compile an existing `.pyx` file, `/start FILE.pyx`                                   |
-| `/create` | Create and compile a new `.pyx` file, `/create FILE.pyx`                             |
-| `/import` | Create a `.py` file that imports the selected `.pyx` module, `/import PYX_FILE_NAME` |
-| `/lan`    | Change the language                                                                  |
-| `/exit`   | Exit the program                                                                     |
+### Available commands
 
----
+| Command | Description |
+|---|---|
+| `/help` | Display the available commands. |
+| `/start FILE.pyx` | Compile an existing Cython source file. |
+| `/create FILE.pyx` | Create and compile a new Cython source file. |
+| `/import MODULE_NAME` | Generate a Python file that imports a Cython module. |
+| `/settings` | Open application settings. |
+| `/lan` | Change the interface language. |
+| `/github` | Display the project's GitHub repository link. |
+| `/exit` | Exit the application. |
 
-## 🌐 Language Switching
+Replace `FILE.pyx` or `MODULE_NAME` with the appropriate filename or module name when using a command.
 
-The language is changed using the `/lan` command.
+### Example workflow
 
-After entering `/lan`, an input field will appear where you will be asked to choose a language.
+1. Clone the repository and install the dependencies.
+2. Start the application with `python compiler.py`.
+3. Enter `/help` to view the available commands.
+4. Use `/create example.pyx` to create and compile a Cython source file.
+5. Use `/start example.pyx` to compile an existing source file.
+6. Use `/lan` to change the interface language when needed.
 
----
+### Language support
 
-## 💡 Dependencies
+The application supports English and Russian.
 
-To run the compiler, install the required libraries:
+Use the `/lan` command and follow the interactive prompt to select your preferred language.
 
-```bash
-pip install cython setuptools art
-```
+### Dependencies
 
----
+The project uses the following Python packages:
 
-## ❤️ About the Project
+- [Cython](https://cython.readthedocs.io/) — translates Cython source code into C or C++.
+- [setuptools](https://setuptools.pypa.io/) — provides Python build and packaging tools.
+- [art](https://pypi.org/project/art/) — provides text-art functionality.
 
-The project is actively being developed, regularly updated, and improved with new features and refinements.
-We would be very happy if you starred our repository ⭐
+A compatible C compiler may also be required to build compiled Cython modules.
 
+## Contributing
 
----
+Contributions, bug reports, and suggestions are welcome.
 
-## 🇷🇺 Русская версия
+To contribute:
 
-**Интерактивный компилятор для проектов на Cython с поддержкой русского и английского языков.**
-Создавайте, компилируйте и управляйте `.pyx` модулями прямо из терминала с удобной системой команд и понятным рабочим процессом.
+1. Fork the repository on GitHub.
+2. Clone your fork to your local machine.
+3. Create a branch for your changes.
+4. Make your changes and test them locally.
+5. Commit and push your changes to your fork.
+6. Open a pull request describing your improvements.
 
----
+Please keep contributions focused, document important changes, and verify that existing functionality continues to work.
 
-## ✨ Возможности
+## Project Structure
 
-* Интерактивное меню в терминале
-* Компиляция существующих `.pyx` файлов
-* Смена параметров и настроек при помощи `/settings`
-* Автоматическое создание новых `.pyx` файлов
-* Генерация `.py` файлов для импорта `.pyx` модулей
-* Поддержка английского и русского языков
-* Простое переключение языка через `/lan`
-* Удобная работа через консоль
-* Постоянное развитие и обновления
+The main project files include:
 
----
+- `compiler.py` — application entry point.
+- `CompilerFunction.py` — compiler-related functionality.
+- `languges.py` — language support.
+- `setup.py` — project setup and packaging configuration.
+- `CHANGELOG.md` — project change history.
 
-## 🚀 Запуск
+## License
 
-```bash
-python compiler.py
-```
+Please refer to the repository for licensing information.
 
-После запуска программа откроет меню команд на выбранном языке.
+## Author
 
----
+Developed by [Bogdan Borunov](https://github.com/Bogdan-Borunov).
 
-## 📜 Команды
-
-| Команда   | Описание                                                                               |
-| --------- | ---------------------------------------------------------------------------------------|
-| `/help`   | Показать список доступных команд                                                       |
-| `/settings`| Настройка опций и других настроек                                                     |
-| `/github` | Вывести ссылку на GitHub проекта                                                       |
-| `/start`  | Скомпилировать существующий `.pyx` файл, /start ИМЯ.pyx                                |
-| `/create` | Создать и скомпилировать новый `.pyx` файл, /create ИМЯ.pyx                            |
-| `/import` | Создать `.py` файл, который импортирует выбранный `.pyx` модуль, /import ИМЯ_PYX_ФАЙЛА |
-| `/lan`    | Изменение языка                                                                        |
-| `/exit`   | Выйти из программы                                                                     |
-
----
-
-## 🌐 Переключение языка
-
-Язык задаётся при помощи команды `/lan`.
-
-После ввода `/lan` появится поле ввода, где вам предложат выбрать язык.
-
----
-
-## 💡 Зависимости
-
-Для работы компилятора требуется установить нужные библиотеки:
-
-```bash
-pip install cython setuptools art
-```
-
----
-
-## ❤️ О проекте
-
-Проект активно развивается, регулярно обновляется и получает новые улучшения.
-Мы будем очень рады, если вы поставите звезду нашему репозиторию ⭐
+Project repository: [Cython-Compiler](https://github.com/Bogdan-Borunov/Cython-Compiler)
