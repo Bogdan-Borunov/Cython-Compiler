@@ -8,6 +8,7 @@ import sys
 import importlib
 import traceback
 from art import text2art
+from time import sleep
 
 lan = None
 
@@ -23,6 +24,8 @@ update_lan()
 print(text2art("Cython Compiler!", font="colossal"))
 
 print("\n" + run[lan])
+
+sleep(2)
 
 print(commands[lan])
 
